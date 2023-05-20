@@ -1,7 +1,60 @@
+body {
+    margin-top: 0;
+}
+
 #container {
     display: flex;
-    margin: auto;
+    margin: auto; 
+    flex-direction: column;
     height: 750px;
     width: 1700px;
     background-color: #EFEFEF;
+}
+
+#photo {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 22.5px;
+    color: black;
+    background: black;
+    border-radius: 50%;
+}
+
+#botones {
+    display: flex;
+    margin: auto;
+    margin-top: 22.5px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+
+}
+
+.buttons-navbar {
+    display: flex;
+    margin: 50px;
+    margin-top: 20px;
+    height: 60px;
+    width: 145px;
+    justify-content: center;
+    align-items: center;
+    border: solid #8C8C8C;
+    border-width: 0.1px;
+    background-color: #680505;
+}
+
+#titulo {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#title {
+    width: 490px;
+    border: solid black;
+    margin-top: 5px;
 }
