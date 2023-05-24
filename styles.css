@@ -13,29 +13,54 @@ body {
 }
 
 #photo {
-    position: fixed;
     display: flex;
     align-self: center;
     margin: auto;
-
+    margin-top: -80px;
+    margin-bottom: 20px;
+    margin-left: 650px;
+    width: 300px;
+    height: 300px;
 }
 
 #logo-franco {
     width: 400px;
     height: 400px;
-    z-index: -1;
 }
+
+#photo2 {
+    position: fixed;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-top: 100px;
+    opacity: 10%;
+
+}
+
+#logo-franco2 > img {
+    width: 400px;
+    height: 400px;
+    z-index: -2;
+}
+
 
 #botones {
     display: flex;
     flex-direction: row;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 10px;
     margin-bottom: 20px;
     justify-content: center;
     z-index: 1;
+}
 
-
+#botones > img {
+    height: 800px;
+    width: 1700px;
+    display: flex;
+    z-index: -1;
+    position: absolute;
 }
 
 .buttons-navbar {
@@ -49,7 +74,7 @@ body {
     border: none;
     border-width: 0.1px;
     border-radius: 30px;
-    background-color: rgba(104, 5, 5, 0.8);
+    background-color: rgba(104, 5, 5, 0.6);
     color: white;
     font-size: 24px;
 }
@@ -64,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 430px;
     margin-bottom: 10px;
 }
 
