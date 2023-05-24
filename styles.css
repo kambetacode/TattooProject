@@ -9,7 +9,7 @@ body {
     height: 750px;
     width: 1700px;
     background-color: black;
-    height: 2000px;
+    height: 4000px;
 }
 
 #photo {
@@ -28,6 +28,7 @@ body {
 
 #botones {
     display: flex;
+    flex-direction: row;
     margin: auto;
     margin-top: 400px;
     margin-bottom: 20px;
@@ -53,11 +54,18 @@ body {
     font-size: 24px;
 }
 
-#titulo {
+.buttons-navbar:hover {
+    cursor: pointer;
+    background-color: rgba(43, 2, 2 , 0.8);
+
+}
+
+#titles {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 #title {
@@ -72,6 +80,161 @@ body {
     margin: auto;
     color: #A00000;
     margin-top: 100px;
+    margin-bottom: 10px;
     font-size: 20px;
     text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
+    z-index: 1;
+}
+
+#flashes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.flash {
+    height: 430px;
+    width: 330px;
+    background-color: white;
+    margin-right: 35px;
+    margin-left: 35px;
+    
+}
+
+.flash-comingsoon {
+    display: flex;
+    height: 430px;
+    width: 330px;
+    background-color: #3F3F3F;
+    margin-right: 35px;
+    margin-left: 35px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.flash > img {
+    height: 430px;
+    width: 330px;
+}
+
+#title3 {
+    display: flex;
+    margin: auto;
+    color: #A00000;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
+    z-index: 1;
+}
+
+#recent-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.work-images {
+    height: 470px;
+    width: 470px;
+    background-color: white;
+    margin-right: 35px;
+    margin-left: 35px;
+    z-index: 1;
+}
+
+.work-images > img {
+    height: 470px;
+    width: 470px;
+}
+
+#title4 {
+    display: flex;
+    margin: auto;
+    color: #A00000;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
+    z-index: 1;
+}
+
+#title5 {
+    display: flex;
+    gap: 720px;
+    margin: auto;
+    color: #A00000;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
+    z-index: 1;
+}
+
+#title5 > h3 {
+    margin-top: 2px;
+    z-index: 1;
+}
+
+#galleries {
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#line {
+    height: 750px;
+    width: 3px;
+    background-color: #A00000;
+    z-index: 1;
+}
+
+#artwork {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+.artwork-content {
+    display: flex;
+    height: 330px;
+    width: 330px;
+    background-color: #3F3F3F;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#tattoos {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+.tattoo-content {
+    height: 330px;
+    width: 330px;
+    background-color: white;
+}
+
+.tattoo-content > img {
+    height: 330px;
+    width: 330px;
 }
