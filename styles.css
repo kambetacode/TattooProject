@@ -1,7 +1,10 @@
 body {
     margin-top: 0;
+    margin-bottom: 0;
 }
-
+.sections {
+    z-index: 1;
+}
 #container {
     display: flex;
     margin: auto; 
@@ -24,7 +27,7 @@ body {
     display: flex;
     margin: auto; 
     flex-direction: column;
-    height: 4000px;
+    height: 3500px;
     width: 1700px;
     background-color: black;
 }
@@ -102,6 +105,8 @@ body {
 
 }
 
+
+
 #titles {
     display: flex;
     flex-direction: column;
@@ -109,6 +114,14 @@ body {
     margin-top: 150px;
     margin-bottom: 10px;
 }
+
+#titles2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
 
 #title {
     width: 490px;
@@ -175,6 +188,7 @@ body {
     font-size: 20px;
     text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
     z-index: 1;
+    justify-content: center;
 }
 
 #recent-work {
@@ -250,7 +264,7 @@ body {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);            /* This is for display grid structure */
 }
 
 .artwork-content {
@@ -279,4 +293,36 @@ body {
 .tattoo-content > img {
     height: 330px;
     width: 330px;
+}
+
+#socials {
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 50px;
+}
+
+#instagram-logo {
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    height: 120px;
+    width: 120px;
+}
+
+#ig1 {
+    grid-column-start: 1;
+    justify-self: end;
+}
+
+#ig2{
+    grid-column-start: 2;
+    justify-self: start;
+}
+
+#socials > h2 {
+    color: #A00000;
+    font-size: 40px;
 }
