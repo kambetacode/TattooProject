@@ -6,10 +6,27 @@ body {
     display: flex;
     margin: auto; 
     flex-direction: column;
-    height: 750px;
+    height: 200x;
     width: 1700px;
     background-color: black;
+}
+
+#container2 {
+    display: flex;
+    margin: auto; 
+    flex-direction: column;
+    height: 500px;
+    width: 1700px;
+    background-color: black;
+}
+
+#container3 {
+    display: flex;
+    margin: auto; 
+    flex-direction: column;
     height: 4000px;
+    width: 1700px;
+    background-color: black;
 }
 
 #photo {
@@ -33,7 +50,7 @@ body {
     display: flex;
     align-self: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: -300px;
     opacity: 10%;
 
 }
@@ -89,7 +106,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 430px;
+    margin-top: 150px;
     margin-bottom: 10px;
 }
 
