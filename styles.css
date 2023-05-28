@@ -1,41 +1,86 @@
 body {
     margin-top: 0;
+    margin-bottom: 0;
 }
-
+.sections {
+    z-index: 1;
+}
 #container {
     display: flex;
     margin: auto; 
     flex-direction: column;
-    height: 750px;
+    height: 200x;
     width: 1700px;
     background-color: black;
-    height: 4000px;
+}
+
+#container2 {
+    display: flex;
+    margin: auto; 
+    flex-direction: column;
+    height: 500px;
+    width: 1700px;
+    background-color: black;
+}
+
+#container3 {
+    display: flex;
+    margin: auto; 
+    flex-direction: column;
+    height: 3500px;
+    width: 1700px;
+    background-color: black;
 }
 
 #photo {
-    position: fixed;
     display: flex;
     align-self: center;
     margin: auto;
-
+    margin-top: -80px;
+    margin-bottom: 20px;
+    margin-left: 650px;
+    width: 300px;
+    height: 300px;
 }
 
 #logo-franco {
     width: 400px;
     height: 400px;
-    z-index: -1;
 }
+
+#photo2 {
+    position: fixed;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-top: -300px;
+    opacity: 10%;
+
+}
+
+#logo-franco2 > img {
+    width: 400px;
+    height: 400px;
+    z-index: -2;
+}
+
 
 #botones {
     display: flex;
     flex-direction: row;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 10px;
     margin-bottom: 20px;
     justify-content: center;
     z-index: 1;
+}
 
-
+#botones > img {
+    height: 800px;
+    width: 1700px;
+    display: flex;
+    z-index: -1;
+    position: absolute;
 }
 
 .buttons-navbar {
@@ -49,7 +94,7 @@ body {
     border: none;
     border-width: 0.1px;
     border-radius: 30px;
-    background-color: rgba(104, 5, 5, 0.8);
+    background-color: rgba(104, 5, 5, 0.6);
     color: white;
     font-size: 24px;
 }
@@ -60,13 +105,23 @@ body {
 
 }
 
+
+
 #titles {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 10px;
 }
+
+#titles2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
 
 #title {
     width: 490px;
@@ -133,6 +188,7 @@ body {
     font-size: 20px;
     text-shadow: rgba(245,240,210,0.8) 0px 0px 3px;
     z-index: 1;
+    justify-content: center;
 }
 
 #recent-work {
@@ -208,7 +264,7 @@ body {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);            /* This is for display grid structure */
 }
 
 .artwork-content {
@@ -237,4 +293,36 @@ body {
 .tattoo-content > img {
     height: 330px;
     width: 330px;
+}
+
+#socials {
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 50px;
+}
+
+#instagram-logo {
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    height: 120px;
+    width: 120px;
+}
+
+#ig1 {
+    grid-column-start: 1;
+    justify-self: end;
+}
+
+#ig2{
+    grid-column-start: 2;
+    justify-self: start;
+}
+
+#socials > h2 {
+    color: #A00000;
+    font-size: 40px;
 }
