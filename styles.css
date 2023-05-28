@@ -1,6 +1,7 @@
 body {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: didot, serif;
 }
 .sections {
     z-index: 1;
@@ -97,6 +98,7 @@ body {
     background-color: rgba(104, 5, 5, 0.6);
     color: white;
     font-size: 24px;
+    font-family: didot, serif;
 }
 
 .buttons-navbar:hover {
